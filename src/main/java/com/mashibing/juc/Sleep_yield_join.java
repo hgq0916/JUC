@@ -1,4 +1,4 @@
-package com.mashibing.juc.synchronize;
+package com.mashibing.juc;
 
 import java.util.concurrent.TimeUnit;
 

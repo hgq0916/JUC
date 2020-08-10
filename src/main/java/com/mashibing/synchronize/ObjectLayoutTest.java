@@ -1,4 +1,4 @@
-package com.mashibing.juc.synchronize;
+package com.mashibing.synchronize;
 
 import org.openjdk.jol.info.ClassLayout;
 
