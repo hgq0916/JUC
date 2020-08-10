@@ -6,15 +6,22 @@ public class TestStack {
 
   private int cc;
 
+  private static TestStack testStack;
+
   private static double dd=2;
 
+  {
+    System.out.println("custructor block");
+  }
+
   static {
-    System.out.println("static");
+    testStack = new TestStack();
+    System.out.println("static init");
     dd = 1.0;
   }
 
   public TestStack(){
-    System.out.println("constructor");
+    System.out.println("constructor init");
     cc = 9;
   }
 
