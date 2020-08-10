@@ -1,7 +1,5 @@
 package com.mashibing.synchronize;
 
-import java.awt.TextArea;
-
 public class TestStack {
 
   private int cc;
