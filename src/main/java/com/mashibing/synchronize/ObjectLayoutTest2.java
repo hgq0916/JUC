@@ -30,7 +30,7 @@ public class ObjectLayoutTest2 {
     System.out.println("main:"+ClassLayout.parseInstance(olt.o).toPrintable());
 
     new Thread(olt::print,"m1").start();
-    new Thread(olt::print,"m2").start();
+    //new Thread(olt::print,"m2").start();
     //new Thread(olt::print,"m3").start();
 
 
