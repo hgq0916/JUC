@@ -1,10 +1,10 @@
-package com.mashibing.juc;
+package com.mashibing.thread;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * @author gangquan.hu
- * @Package: com.mashibing.juc.synchronize.Sleep_yeild_join
+ * @Package: com.mashibing.thread.synchronizedTest.Sleep_yeild_join
  * @Description: TODO
  * @date 2020/8/10 18:03
  */

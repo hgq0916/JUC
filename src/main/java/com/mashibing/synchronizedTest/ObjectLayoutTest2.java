@@ -1,11 +1,11 @@
-package com.mashibing.synchronize;
+package com.mashibing.synchronizedTest;
 
 import java.util.concurrent.TimeUnit;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
  * @author gangquan.hu
- * @Package: com.mashibing.juc.synchronize.ObjectLayoutTest
+ * @Package: com.mashibing.thread.synchronizedTest.ObjectLayoutTest
  * @Description: TODO
  * @date 2020/8/10 13:27
  */

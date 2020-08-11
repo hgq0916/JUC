@@ -1,11 +1,11 @@
-package com.mashibing.synchronize;
+package com.mashibing.synchronizedTest;
 
 import java.util.concurrent.TimeUnit;
 import org.openjdk.jol.info.ClassLayout;
 
 /**
  * @author gangquan.hu
- * @Package: com.mashibing.synchronize.Synchronized1Test
+ * @Package: com.mashibing.synchronizedTest.Synchronized1Test
  * @Description: synchronized由偏向锁到自旋锁到重量级锁
  * @date 2020/8/11 9:38
  */

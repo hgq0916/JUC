@@ -1,4 +1,4 @@
-package com.mashibing.synchronize;
+package com.mashibing.synchronizedTest;
 
 public class TestStack {
 

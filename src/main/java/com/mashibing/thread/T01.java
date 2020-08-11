@@ -1,4 +1,4 @@
-package com.mashibing.juc;
+package com.mashibing.thread;
 
 /**
  * synchronized是可重入锁

@@ -1,10 +1,10 @@
-package com.mashibing.synchronize;
+package com.mashibing.synchronizedTest;
 
 import org.openjdk.jol.info.ClassLayout;
 
 /**
  * @author gangquan.hu
- * @Package: com.mashibing.synchronize.Synchronized1Test
+ * @Package: com.mashibing.synchronizedTest.Synchronized1Test
  * @Description: synchronized由无锁到自旋锁
  * @date 2020/8/11 9:38
  */
