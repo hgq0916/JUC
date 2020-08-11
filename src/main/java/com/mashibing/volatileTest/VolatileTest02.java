@@ -1,5 +1,6 @@
 package com.mashibing.volatileTest;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -27,3 +28,5 @@ public class VolatileTest02 {
   }
 
 }
+
+
