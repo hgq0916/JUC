@@ -14,12 +14,12 @@ public class CyclicBarrierTest {
 
   public static void main(String[] args) {
     CyclicBarrier cyclicBarrier = new CyclicBarrier(20);
-
     Thread[] threads = new Thread[100];
 
     for(int i=0;i<threads.length;i++){
       new Thread(()->{
         try {
+          System.out.println("waiting number:"+cyclicBarrier.getNumberWaiting());
           cyclicBarrier.await();//没满则线程阻塞
           System.out.println(Thread.currentThread().getName()+"发车...");
         } catch (InterruptedException e) {
@@ -29,14 +29,6 @@ public class CyclicBarrierTest {
         }
       },"thread"+i).start();
 
-      if(i%19 ==0){
-        try {
-          System.out.println("sleep"+i);
-          TimeUnit.SECONDS.sleep(1);
-        } catch (InterruptedException e) {
-          e.printStackTrace();
-        }
-      }
     }
 
   }
