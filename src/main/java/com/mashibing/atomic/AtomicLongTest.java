@@ -1,5 +1,6 @@
 package com.mashibing.atomic;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.LongAdder;
 
@@ -13,24 +14,27 @@ public class AtomicLongTest {
     for(int i=0;i<10000;i++){
       num1.incrementAndGet();
     }
+    sleep();
   }
 
   public void longAdder(){
     for(int i=0;i<100000;i++){
       longAdder.increment();
     }
+    sleep();
   }
 
   public synchronized void synchronizedTest(){
     for(int i=0;i<100000;i++){
       count++;
     }
+    sleep();
   }
 
   public static void main(String[] args) throws InterruptedException {
     AtomicLongTest atomicLongTest = new AtomicLongTest();
 
-    int size = 1000;
+    int size = 10000;
 
     Thread[] atomicThreads = new Thread[size];
     for(int i=0;i<atomicThreads.length;i++){
@@ -86,4 +90,11 @@ public class AtomicLongTest {
 
   }
 
+  public static void sleep(){
+    try {
+      TimeUnit.MICROSECONDS.sleep(1);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+  }
 }
