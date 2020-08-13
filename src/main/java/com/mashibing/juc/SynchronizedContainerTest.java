@@ -80,6 +80,7 @@ class MySynchronizedContainer<T> {
     }
     T value = list.pop();
     System.out.println(Thread.currentThread().getName()+" 消费 "+value);
+    this.notifyAll();
     return value;
   }
 
