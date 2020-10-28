@@ -37,7 +37,7 @@ public class PrintLetterAndNumber05 {
             for(int i=0;i<letters.length;i++){
                 int rec = -1;
                 try {
-                    pis1.read();
+                    rec = pis1.read();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -53,13 +53,6 @@ public class PrintLetterAndNumber05 {
                 }
             }
 
-            try {
-                pos1.write(66);
-                pis1.close();
-                pos1.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }));
         t2.set(new Thread(()->{
             try {
@@ -76,21 +69,13 @@ public class PrintLetterAndNumber05 {
                 }
                 System.out.println(numbers[i]);
                 try {
-                    if(rec == 65){
+                    if(i != numbers.length-1){
                         pos2.write(65);
                         pos2.flush();
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-
-            try {
-                pos2.write(66);
-                pis2.close();
-                pos2.close();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
 
         }));
