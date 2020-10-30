@@ -12,7 +12,7 @@ import java.util.concurrent.RecursiveTask;
  */
 public class Random_Num_Sum04 {
 
-    public static final int MAX_NUM = 5000;
+    public static final int MAX_NUM = 50000;
 
     public static long[] nums = new long[10000_0000];
 
